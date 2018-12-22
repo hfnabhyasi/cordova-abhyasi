@@ -7,7 +7,7 @@
 # Node
 npm-debug.log
 /node_modules
-
+/www/dist
 # Cordova
 /platforms
 /plugins

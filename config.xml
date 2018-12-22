@@ -25,6 +25,7 @@
     </platform>
     <preference name="Fullscreen" value="true" />
     <preference name="WebViewBounce" value="true" />
+    <ignore entries="node_modules,public,src,.gitignore,babel.config.js,package-lock.json,README.md,vue.config.js" />
     <engine name="ios" spec="^4.5.5" />
     <engine name="android" spec="^7.1.4" />
 </widget>
