@@ -1,6 +1,11 @@
 <template lang="html">
   <v-ons-page>
-    <v-ons-toolbar> <div class="center">Home</div> </v-ons-toolbar>
+    <v-ons-toolbar>
+      <div class="center">
+        <v-ons-icon icon="fa-home"></v-ons-icon>
+        Home
+      </div>
+    </v-ons-toolbar>
 
     <!--  MENU -->
     <v-ons-list>
@@ -14,8 +19,8 @@
             <v-ons-list-item
               modifier="longdivider"
               tappable
-              @click="push('PrayerPage')"
-              >Prayer</v-ons-list-item
+              @click="push('RelaxationPage')"
+              >Relaxation</v-ons-list-item
             >
             <v-ons-list-item
               modifier="longdivider"
@@ -32,8 +37,8 @@
             <v-ons-list-item
               modifier="longdivider"
               tappable
-              @click="push('RelaxationPage')"
-              >Relaxation</v-ons-list-item
+              @click="push('PrayerPage')"
+              >Prayer</v-ons-list-item
             >
           </v-ons-list>
         </div>

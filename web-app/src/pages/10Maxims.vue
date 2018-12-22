@@ -2,7 +2,10 @@
   <v-ons-page>
     <v-ons-toolbar>
       <div class="left"><v-ons-back-button>Home</v-ons-back-button></div>
-      <div class="center">10 Maxims</div>
+      <div class="center">
+        <v-ons-icon icon="fa-book-open"></v-ons-icon>
+        10 Maxims
+      </div>
     </v-ons-toolbar>
 
     <v-ons-list>
