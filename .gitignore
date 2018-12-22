@@ -18,7 +18,8 @@ resources/signing
 # from vue-cli .gitignore
 .DS_Store
 node_modules
-/dist
+web-app/dist
+www/dist
 
 # local env files
 .env.local
