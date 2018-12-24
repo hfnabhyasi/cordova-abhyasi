@@ -15,7 +15,7 @@ export default {};
 <style lang="css">
 .CardWithFloralBorder-cmp  {
     padding:  65px 0;
-    background-image: url(/img/top-border.png), url(/img/bottom-border.png);
+    background-image: url("../../public/img/top-border.png"), url("../../public/img/bottom-border.png");
     background-size:     contain, contain;
     background-repeat:   no-repeat, no-repeat;
     background-position: top center, bottom center;

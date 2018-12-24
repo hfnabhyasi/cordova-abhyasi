@@ -19,7 +19,8 @@ resources/signing
 .DS_Store
 node_modules
 web-app/dist
-www/dist
+www
+www
 
 # local env files
 .env.local
