@@ -12,9 +12,6 @@
 </template>
 
 <script>
-import Set1 from "../data/set1.json";
-
-alert(typeof Set1);
 export default {};
 </script>
 
