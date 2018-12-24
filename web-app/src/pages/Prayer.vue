@@ -9,7 +9,7 @@
       <v-ons-list>
         <v-ons-list-item
           v-for="(step, idx) in prayerSteps"
-          style="padding: 0px;"
+          style="padding: 0px 10px;"
         >
           <template v-if="typeof step === 'string'">
             {{ step }}

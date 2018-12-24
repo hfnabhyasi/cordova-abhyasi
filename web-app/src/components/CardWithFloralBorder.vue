@@ -17,7 +17,7 @@ export default {};
     padding:  65px 0;
     background-image: url(/img/top-border.png), url(/img/bottom-border.png);
     background-size:     contain, contain;
-    background-repeat:   no-repeat;
+    background-repeat:   no-repeat, no-repeat;
     background-position: top center, bottom center;
 }
 </style>
