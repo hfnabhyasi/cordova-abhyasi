@@ -1,5 +1,5 @@
 <template lang="html">
-  <v-ons-list>
+  <v-ons-list class="StepsList-cmp">
     <v-ons-list-item
       modifier="longdivider"
       v-for="(step, idx) in steps"
@@ -10,10 +10,10 @@
   </v-ons-list>
 </template>
 
+<style lang="css"></style>
+
 <script>
 export default {
   props: ["steps"]
 };
 </script>
-
-<style lang="css"></style>

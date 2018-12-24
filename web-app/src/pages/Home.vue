@@ -41,7 +41,6 @@
             </v-ons-list>
           </div>
         </v-ons-list-item>
-        <v-ons-list-item>&nbsp;</v-ons-list-item>
       </v-ons-list>
     </CardWithFloralBorder>
   </v-ons-page>

@@ -1,13 +1,10 @@
 <template lang="html">
   <v-ons-card class="CardWithFloralBorder-cmp">
-    <img class="top-image" src="img/top-right-border.png" style="width:100%;" />
-    <!--  CONTENT SLOT -->
-    <slot></slot>
-    <img
-      class="bottom-image"
-      src="img/top-right-border.png"
-      style="width:100%;"
-    />
+    <div class="card-inner-wrapper">
+      <!--  CONTENT SLOT -->
+      <slot></slot>
+      <!--  CONTENT SLOT -->
+    </div>
   </v-ons-card>
 </template>
 
@@ -20,8 +17,22 @@ export default {};
   margin-bottom: -28px;
   width: 100%;
 }
-.CardWithFloralBorder-cmp .bottom-image {
+/* .CardWithFloralBorder-cmp .bottom-image {
   margin-top: -28px;
   transform: rotate(180deg);
+} */
+
+.CardWithFloralBorder-cmp {
+  /* background-color: blue; */
 }
+.CardWithFloralBorder-cmp  {
+    padding:  65px 0;
+    background-image: url(/img/top-border.png), url(/img/bottom-border.png);
+    background-size:     contain, contain;
+    background-repeat:   no-repeat;
+    background-position: top center, bottom center;
+}
+/* .CardWithFloralBorder-cmp .list .list-item {
+  padding-top: 70px;
+} */
 </style>
