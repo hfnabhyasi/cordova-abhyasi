@@ -13,18 +13,6 @@ export default {};
 </script>
 
 <style lang="css">
-.CardWithFloralBorder-cmp .top-image {
-  margin-bottom: -28px;
-  width: 100%;
-}
-/* .CardWithFloralBorder-cmp .bottom-image {
-  margin-top: -28px;
-  transform: rotate(180deg);
-} */
-
-.CardWithFloralBorder-cmp {
-  /* background-color: blue; */
-}
 .CardWithFloralBorder-cmp  {
     padding:  65px 0;
     background-image: url(/img/top-border.png), url(/img/bottom-border.png);
@@ -32,7 +20,4 @@ export default {};
     background-repeat:   no-repeat;
     background-position: top center, bottom center;
 }
-/* .CardWithFloralBorder-cmp .list .list-item {
-  padding-top: 70px;
-} */
 </style>
