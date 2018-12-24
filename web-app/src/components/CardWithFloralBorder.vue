@@ -1,5 +1,8 @@
 <template lang="html">
-  <v-ons-card class="CardWithFloralBorder-cmp">
+  <v-ons-card
+    class="CardWithFloralBorder-cmp"
+    style="background-image:url(img/top-border.png), url(img/bottom-border.png);"
+  >
     <div class="card-inner-wrapper">
       <!--  CONTENT SLOT -->
       <slot></slot>
@@ -15,7 +18,7 @@ export default {};
 <style lang="css">
 .CardWithFloralBorder-cmp  {
     padding:  65px 0;
-    background-image: url("../../public/img/top-border.png"), url("../../public/img/bottom-border.png");
+    /* background-image: url("@~/img/top-border.png"), url("@~/img/bottom-border.png"); */
     background-size:     contain, contain;
     background-repeat:   no-repeat, no-repeat;
     background-position: top center, bottom center;
