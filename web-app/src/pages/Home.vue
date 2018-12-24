@@ -15,24 +15,10 @@
           <div class="expandable-content">
             <v-ons-list>
               <v-ons-list-item
+                v-for="link in practiceMenuItems"
                 modifier="longdivider"
-                @click="push('RelaxationPage')"
-                >Relaxation</v-ons-list-item
-              >
-              <v-ons-list-item
-                modifier="longdivider"
-                @click="push('MeditationPage')"
-                >Meditation</v-ons-list-item
-              >
-              <v-ons-list-item
-                modifier="longdivider"
-                @click="push('CleaningPage')"
-                >Cleaning</v-ons-list-item
-              >
-              <v-ons-list-item
-                modifier="longdivider"
-                @click="push('PrayerPage')"
-                >Prayer</v-ons-list-item
+                @click="push(link.page)"
+                >{{ link.label }} {{ isExpanded }}</v-ons-list-item
               >
             </v-ons-list>
           </div>
@@ -61,12 +47,31 @@ const pages = {
 export default {
   data() {
     return {
-      isExpanded: false
+      isExpanded: false,
+      practiceMenuItems: [
+        {
+          page: "RelaxationPage",
+          label: "Relaxation"
+        },
+        {
+          page: "MeditationPage",
+          label: "Meditation"
+        },
+        {
+          page: "CleaningPage",
+          label: "Cleaning"
+        },
+        {
+          page: "PrayerPage",
+          label: "Prayer"
+        }
+      ]
     };
   },
   components: { CardWithFloralBorder },
   methods: {
     push(pageName) {
+      this.isExpanded = false;
       this.$emit("push-page", {
         extends: pages[pageName],
         onsNavigatorOptions: {
