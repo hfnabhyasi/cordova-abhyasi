@@ -1,10 +1,7 @@
 <template lang="html">
   <v-ons-page>
     <v-ons-toolbar>
-      <div class="center">
-        <v-ons-icon icon="fa-home"></v-ons-icon>
-        Home
-      </div>
+      <div class="center"><i class="fa fa-home"></i> HOME</div>
     </v-ons-toolbar>
 
     <!--  MENU -->

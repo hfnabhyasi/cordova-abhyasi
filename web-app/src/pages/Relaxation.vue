@@ -2,24 +2,11 @@
   <v-ons-page>
     <v-ons-toolbar>
       <div class="left"><v-ons-back-button></v-ons-back-button></div>
-      <div class="center">
-        <v-ons-icon icon="fa-heart"></v-ons-icon>
-        HFN Relaxation
-      </div>
+      <div class="center">RELAXATION</div>
     </v-ons-toolbar>
 
     <CardWithFloralBorder>
-      <v-ons-list>
-        <v-ons-list-item
-          modifier="longdivider"
-          v-for="(step, idx) in relaxationSteps"
-          v-bind="idx"
-        >
-          <span><i class="fa fa-circle-o"></i> &nbsp;{{ step }}</span>
-          <!-- <v-ons-icon icon="fa-heart" class="list-item__icon"></v-ons-icon> -->
-          <!-- {{ step }} -->
-        </v-ons-list-item>
-      </v-ons-list>
+      <StepsList :steps="relaxationSteps" />
     </CardWithFloralBorder>
 
     <p style="text-align: center"></p>
@@ -30,9 +17,11 @@
 
 <script>
 import CardWithFloralBorder from "../components/CardWithFloralBorder";
+import StepsList from "../components/StepsList";
+//
 export default {
   key: "ReleaxationPage",
-  components: { CardWithFloralBorder },
+  components: { CardWithFloralBorder, StepsList },
   data() {
     return {
       relaxationSteps: [
