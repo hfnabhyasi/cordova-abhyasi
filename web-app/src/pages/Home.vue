@@ -8,42 +8,45 @@
     </v-ons-toolbar>
 
     <!--  MENU -->
-    <v-ons-list>
-      <v-ons-list-item @click="push('TenMaximsPage')" tappable
-        >10 Maxims</v-ons-list-item
-      >
-      <v-ons-list-item expandable :expanded.sync="isExpanded">
-        Practice / Abhyaas
-        <div class="expandable-content">
-          <v-ons-list>
-            <v-ons-list-item
-              modifier="longdivider"
-              tappable
-              @click="push('RelaxationPage')"
-              >Relaxation</v-ons-list-item
-            >
-            <v-ons-list-item
-              modifier="longdivider"
-              tappable
-              @click="push('MeditationPage')"
-              >Meditation</v-ons-list-item
-            >
-            <v-ons-list-item
-              modifier="longdivider"
-              tappable
-              @click="push('CleaningPage')"
-              >Cleaning</v-ons-list-item
-            >
-            <v-ons-list-item
-              modifier="longdivider"
-              tappable
-              @click="push('PrayerPage')"
-              >Prayer</v-ons-list-item
-            >
-          </v-ons-list>
-        </div>
-      </v-ons-list-item>
-    </v-ons-list>
+    <CardWithFloralBorder>
+      <v-ons-list>
+        <v-ons-list-item @click="push('TenMaximsPage')" tappable
+          >10 Maxims</v-ons-list-item
+        >
+        <v-ons-list-item expandable :expanded.sync="isExpanded">
+          Practice / Abhyaas
+          <div class="expandable-content">
+            <v-ons-list>
+              <v-ons-list-item
+                modifier="longdivider"
+                tappable
+                @click="push('RelaxationPage')"
+                >Relaxation</v-ons-list-item
+              >
+              <v-ons-list-item
+                modifier="longdivider"
+                tappable
+                @click="push('MeditationPage')"
+                >Meditation</v-ons-list-item
+              >
+              <v-ons-list-item
+                modifier="longdivider"
+                tappable
+                @click="push('CleaningPage')"
+                >Cleaning</v-ons-list-item
+              >
+              <v-ons-list-item
+                modifier="longdivider"
+                tappable
+                @click="push('PrayerPage')"
+                >Prayer</v-ons-list-item
+              >
+            </v-ons-list>
+          </div>
+        </v-ons-list-item>
+        <v-ons-list-item>&nbsp;</v-ons-list-item>
+      </v-ons-list>
+    </CardWithFloralBorder>
   </v-ons-page>
 </template>
 
@@ -53,6 +56,7 @@ import RelaxationPage from "./Relaxation.vue";
 import PrayerPage from "./Prayer.vue";
 import MeditationPage from "./Meditation.vue";
 import CleaningPage from "./Cleaning.vue";
+import CardWithFloralBorder from "../components/CardWithFloralBorder.vue";
 
 const pages = {
   TenMaximsPage,
@@ -68,6 +72,7 @@ export default {
       isExpanded: false
     };
   },
+  components: { CardWithFloralBorder },
   methods: {
     push(pageName) {
       this.$emit("push-page", pages[pageName]);

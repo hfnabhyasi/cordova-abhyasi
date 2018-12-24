@@ -8,14 +8,15 @@
       </div>
     </v-ons-toolbar>
 
-    <v-ons-list>
-      <DialogListItem v-for="(maxim, idx) in maxims" :key="idx" :cmp="maxim" />
-      <!-- <ExpandableListItem
-        v-for="(maxim, idx) in maxims"
-        :key="idx"
-        :cmp="maxim"
-      ></ExpandableListItem> -->
-    </v-ons-list>
+    <CardWithFloralBorder>
+      <v-ons-list>
+        <DialogListItem
+          v-for="(maxim, idx) in maxims"
+          :key="idx"
+          :cmp="maxim"
+        />
+      </v-ons-list>
+    </CardWithFloralBorder>
   </v-ons-page>
 </template>
 
@@ -23,11 +24,13 @@
 
 <script>
 import DialogListItem from "../components/dialog-list-item";
+import CardWithFloralBorder from "../components/CardWithFloralBorder";
 
 export default {
   key: "TenMaximsPage",
   components: {
-    DialogListItem
+    DialogListItem,
+    CardWithFloralBorder
   },
   data() {
     return {

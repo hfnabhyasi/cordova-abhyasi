@@ -2,18 +2,55 @@
   <v-ons-page>
     <v-ons-toolbar>
       <div class="left"><v-ons-back-button></v-ons-back-button></div>
-      <div class="center">HFN Relaxation</div>
+      <div class="center">
+        <v-ons-icon icon="fa-heart"></v-ons-icon>
+        HFN Relaxation
+      </div>
     </v-ons-toolbar>
-    <p style="text-align: center">This is Relaxation Page</p>
+
+    <CardWithFloralBorder>
+      <v-ons-list>
+        <v-ons-list-item
+          modifier="longdivider"
+          v-for="(step, idx) in relaxationSteps"
+          v-bind="idx"
+        >
+          <span><i class="fa fa-circle-o"></i> &nbsp;{{ step }}</span>
+          <!-- <v-ons-icon icon="fa-heart" class="list-item__icon"></v-ons-icon> -->
+          <!-- {{ step }} -->
+        </v-ons-list-item>
+      </v-ons-list>
+    </CardWithFloralBorder>
+
+    <p style="text-align: center"></p>
   </v-ons-page>
 </template>
 
-<style>
-/* CSS goes here */
-</style>
+<style></style>
 
 <script>
+import CardWithFloralBorder from "../components/CardWithFloralBorder";
 export default {
-  key: "ReleaxationPage"
+  key: "ReleaxationPage",
+  components: { CardWithFloralBorder },
+  data() {
+    return {
+      relaxationSteps: [
+        "Sit comfortably and close your eyes very softly and very gently.",
+        "Let's begin with the toes. Wiggle your toes. Now feel them relax.",
+        "Relax your ankles and feet.  Feel energy move up from the Earth...up your feet to your knees relaxing the legs.",
+        "Relax your thighs.",
+        "The energy moves up your legs... relaxing them.  Now, deeply relax your hips...stomach...and waist.",
+        "Relax your back.  From the top to the bottom the entire back is relaxed.",
+        "Relax your upper arms.  Relax each muscle in your forearms...your hands...right up to your finger tips.",
+        "Relax the neck muscles.  Move your awareness up to the face.  Relax the jaws...mouth...nose...eyes...earlobes...facial muscles...forehead..all the way to the top of your head.",
+        "Feel how your whole body is now completely relaxed.",
+        "Move your attention to your heart.  As you rest there, gently have the idea that Divine Light is illuminating your heart from within and is attracting or pulling your attention inward...",
+        "Feel immersed in the love and light in your heart.",
+        "Remain still and quiet, and slowly become absorbed in yourself.",
+        "Remain absorbed within this deep silence for as long as you want, until you feel ready to come out again."
+      ]
+    };
+  }
 };
 </script>
