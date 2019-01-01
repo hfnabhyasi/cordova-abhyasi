@@ -18,7 +18,7 @@
                 v-for="link in practiceMenuItems"
                 modifier="longdivider"
                 @click="push(link.page)"
-                >{{ link.label }} {{ isExpanded }}</v-ons-list-item
+                >{{ link.label }}</v-ons-list-item
               >
             </v-ons-list>
           </div>
