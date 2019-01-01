@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "dependencies": {
+    "framework7": "^3.6.3",
+    "framework7-vue": "^3.6.3",
+    "jquery": "^3.3.1"
+  }
+}
