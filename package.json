@@ -6,7 +6,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build-and-deploy": "cd web-app-2 && vue build src && rm -rf ../www/dist && cp -r dist ../www/dist && cordova run android"
+        "build-and-deploy": "cd web-app && vue build src && rm -rf ../www/dist && cp -r dist ../www/dist && cordova run android"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
