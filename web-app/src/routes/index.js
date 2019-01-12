@@ -1,13 +1,16 @@
 
 import HomePage from "../pages/Home.vue";
+//
 import MaximsPage from "../pages/10Maxims.vue";
+import MaximPage from "../pages/Maxim.vue";
+//
+import PracticePage from "../pages/Practice.vue";
 import RelaxationPage from "../pages/Relaxation.vue";
 import MeditationPage from "../pages/Meditation.vue";
 import CleaningPage from "../pages/Cleaning.vue";
 import PrayerPage from "../pages/Prayer.vue";
+//
 import AEIOUPage from "../pages/AEIOU.vue";
-import MaximPage from "../pages/Maxim.vue";
-import PracticePage from "../pages/Practice.vue";
 
 export default [
   {
