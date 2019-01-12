@@ -6,6 +6,7 @@ import MeditationPage from "../pages/Meditation.vue";
 import CleaningPage from "../pages/Cleaning.vue";
 import PrayerPage from "../pages/Prayer.vue";
 import AEIOUPage from "../pages/AEIOU.vue";
+import MaximPage from "../pages/Maxim.vue";
 
 export default [
   {
@@ -15,6 +16,9 @@ export default [
   {
     path: "/maxims/",
     component: MaximsPage
+  },{
+    path:"/maxims/:maxim",
+    component: MaximPage
   },
   {
     path: "/relaxation/",
