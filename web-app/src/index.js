@@ -6,7 +6,6 @@ import App from './App.vue';
 
 Framework7.use(Framework7Vue);
 
-
 new Vue({
   el: '#app',
   render: (h) => h(App),
