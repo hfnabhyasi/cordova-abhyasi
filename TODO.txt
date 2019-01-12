@@ -1,1 +1,1 @@
-TODO SETUP the 10 Maxims page
+TODO SETUP all the pages with data from JSON files
