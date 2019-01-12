@@ -38,7 +38,11 @@
           </f7-accordion-content>
         </f7-list-item>
 
-        <f7-list-item title="A E I O U of Spirituality"></f7-list-item>
+        <f7-list-item
+          title="A E I O U of Spirituality"
+          link="/aeiou/"
+          no-chevron
+        ></f7-list-item>
       </f7-list>
     </f7-card>
   </f7-page>

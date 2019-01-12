@@ -13,6 +13,7 @@ import RelaxationPage from "./pages/Relaxation.vue";
 import MeditationPage from "./pages/Meditation.vue";
 import CleaningPage from "./pages/Cleaning.vue";
 import PrayerPage from "./pages/Prayer.vue";
+import AEIOUPage from "./pages/AEIOU.vue";
 import HomePage from "./pages/home.vue";
 import AboutPage from "./pages/about.vue";
 import LoginPage from "./pages/login.vue";
@@ -62,6 +63,10 @@ export default {
           {
             path: "/prayer/",
             component: PrayerPage
+          },
+          {
+            path: "/aeiou/",
+            component: AEIOUPage
           }
           // ...
         ]
