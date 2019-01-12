@@ -4,14 +4,20 @@
 
     <f7-card>
       <f7-list>
-        <f7-list> <f7-list-item title="Maxim 1"></f7-list-item> </f7-list>
-        <f7-list> <f7-list-item title="Maxim 2"></f7-list-item> </f7-list>
-        <f7-list> <f7-list-item title="Maxim 3"></f7-list-item> </f7-list>
-        <f7-list> <f7-list-item title="Maxim 4"></f7-list-item> </f7-list>
+        <f7-list-item
+          v-for="(maxim, idx) in maximsData.maxims"
+          :title="idx"
+        ></f7-list-item>
       </f7-list>
     </f7-card>
   </f7-page>
 </template>
 <script>
-export default {};
+import maximsData from "../data/10Maxims";
+
+export default {
+  data() {
+    return { maximsData };
+  }
+};
 </script>
