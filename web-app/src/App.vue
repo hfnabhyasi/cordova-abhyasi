@@ -1,3 +1,4 @@
+<!-- app.vue -->
 <template>
   <f7-app :params="f7params">
     <!-- Current View/Router, initial page will be loaded from home.vue component -->
