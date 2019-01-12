@@ -7,11 +7,6 @@ import MaximPage from "../pages/Maxim.vue";
 import PracticePage from "../pages/Practice.vue";
 import PracticeTypePage from "../pages/PracticeType.vue";
 //
-import RelaxationPage from "../pages/Relaxation.vue";
-import MeditationPage from "../pages/Meditation.vue";
-import CleaningPage from "../pages/Cleaning.vue";
-import PrayerPage from "../pages/Prayer.vue";
-//
 import AEIOUPage from "../pages/AEIOU.vue";
 
 export default [
@@ -33,22 +28,6 @@ export default [
   {
     path: "/practice/:practice",
     component: PracticeTypePage
-  },
-  {
-    path: "/relaxation/",
-    component: RelaxationPage
-  },
-  {
-    path: "/meditation/",
-    component: MeditationPage
-  },
-  {
-    path: "/cleaning/",
-    component: CleaningPage
-  },
-  {
-    path: "/prayer/",
-    component: PrayerPage
   },
   {
     path: "/aeiou/",
