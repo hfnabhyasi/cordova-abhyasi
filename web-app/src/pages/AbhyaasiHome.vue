@@ -25,30 +25,3 @@
 <script>
 export default {};
 </script>
-
-<!-- <f7-accordion-content>
-  <f7-block>
-    <f7-list>
-      <f7-list-item
-        title="Relaxation"
-        link="/relaxation/"
-        no-chevron
-      ></f7-list-item>
-      <f7-list-item
-        title="Meditation"
-        link="/meditation/"
-        no-chevron
-      ></f7-list-item>
-      <f7-list-item
-        title="Cleaning"
-        link="/cleaning/"
-        no-chevron
-      ></f7-list-item>
-      <f7-list-item
-        title="Prayer"
-        link="/prayer/"
-        no-chevron
-      ></f7-list-item>
-    </f7-list>
-  </f7-block>
-</f7-accordion-content> -->
