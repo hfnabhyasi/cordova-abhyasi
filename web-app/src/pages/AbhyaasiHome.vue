@@ -1,6 +1,8 @@
 <template>
   <f7-page name="home">
-    <f7-navbar title="Home"></f7-navbar>
+    <f7-navbar>
+      <f7-nav-title> <f7-icon f7="home"></f7-icon>&nbsp; Home </f7-nav-title>
+    </f7-navbar>
     <!-- Page content -->
     <f7-card>
       <f7-list>
