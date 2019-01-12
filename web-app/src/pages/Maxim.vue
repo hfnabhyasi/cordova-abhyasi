@@ -27,3 +27,8 @@ export default {
   props: ["maxim"]
 };
 </script>
+<style media="screen" scoped>
+div.card {
+  padding-bottom: 20px;
+}
+</style>

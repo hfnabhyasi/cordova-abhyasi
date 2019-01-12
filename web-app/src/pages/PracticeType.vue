@@ -7,7 +7,22 @@
         <h1 class="capitalize">{{ practice }}</h1>
         <ul>
           <li v-for="step in Practice[practice]">
-            <p>{{ step }}</p>
+            <template v-if="step.prayer">
+              <div>
+                <p
+                  v-for="prayerLine in step.prayer"
+                  style="text-align:center;margin:0; margin-bottom: 3px;padding:0 !important;"
+                >
+                  <i>{{ prayerLine }}</i>
+                </p>
+              </div>
+            </template>
+            <template v-else>
+              <p>
+                <f7-icon f7="circle" size="16" color="blue"></f7-icon>
+                <span>&nbsp;{{ step }}</span>
+              </p>
+            </template>
           </li>
         </ul>
       </f7-block>
@@ -29,6 +44,7 @@ export default {
 }
 ul {
   padding-bottom: 20px;
-  padding-left: 15px;
+  list-style: none;
+  padding-left: 5px;
 }
 </style>
