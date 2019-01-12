@@ -10,6 +10,7 @@
 /* Import pages components */
 import HomePage from "./pages/home.vue";
 import AboutPage from "./pages/about.vue";
+import MaximsPage from "./pages/10Maxims.vue";
 import LoginPage from "./pages/login.vue";
 
 /*
@@ -37,6 +38,10 @@ export default {
           {
             path: "/login/",
             component: LoginPage
+          },
+          {
+            path: "/maxims/",
+            component: MaximsPage
           }
           // ...
         ]

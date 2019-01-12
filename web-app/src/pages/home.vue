@@ -6,7 +6,7 @@
       <f7-list accordion-list>
         <f7-list-item
           title="10 Maxims"
-          link="/about/"
+          link="/maxims/"
           no-chevron
         ></f7-list-item>
         <f7-list-item accordion-item title="Abhyaas / Practice">
