@@ -7,6 +7,7 @@
           v-for="(maxim, idxProp, idx) in maximsData.maxims"
           :title="maxim.properties.title"
           :link="`/maxims/${idxProp}`"
+          no-chevron
         >
         </f7-list-item>
       </f7-list>

@@ -7,6 +7,7 @@ import CleaningPage from "../pages/Cleaning.vue";
 import PrayerPage from "../pages/Prayer.vue";
 import AEIOUPage from "../pages/AEIOU.vue";
 import MaximPage from "../pages/Maxim.vue";
+import PracticePage from "../pages/Practice.vue";
 
 export default [
   {
@@ -35,6 +36,10 @@ export default [
   {
     path: "/prayer/",
     component: PrayerPage
+  },
+  {
+    path: "/practice/",
+    component: PracticePage
   },
   {
     path: "/aeiou/",
