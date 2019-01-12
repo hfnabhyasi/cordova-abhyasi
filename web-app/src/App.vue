@@ -8,15 +8,13 @@
 
 <script>
 /* Import pages components */
+import HomePage from "./pages/Home.vue";
 import MaximsPage from "./pages/10Maxims.vue";
 import RelaxationPage from "./pages/Relaxation.vue";
 import MeditationPage from "./pages/Meditation.vue";
 import CleaningPage from "./pages/Cleaning.vue";
 import PrayerPage from "./pages/Prayer.vue";
 import AEIOUPage from "./pages/AEIOU.vue";
-import HomePage from "./pages/home.vue";
-import AboutPage from "./pages/about.vue";
-import LoginPage from "./pages/login.vue";
 
 /*
   Now we need to map components to routes.
@@ -35,14 +33,6 @@ export default {
           {
             path: "/",
             component: HomePage
-          },
-          {
-            path: "/about/",
-            component: AboutPage
-          },
-          {
-            path: "/login/",
-            component: LoginPage
           },
           {
             path: "/maxims/",
