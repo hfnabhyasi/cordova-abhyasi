@@ -1,5 +1,5 @@
 
-import HomePage from "../pages/Home.vue";
+import HomePage from "../pages/AbhyaasiHome.vue";
 //
 import MaximsPage from "../pages/10Maxims.vue";
 import MaximPage from "../pages/Maxim.vue";
