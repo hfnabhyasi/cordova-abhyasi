@@ -8,9 +8,13 @@
 
 <script>
 /* Import pages components */
+import MaximsPage from "./pages/10Maxims.vue";
+import RelaxationPage from "./pages/Relaxation.vue";
+import MeditationPage from "./pages/Meditation.vue";
+import CleaningPage from "./pages/Cleaning.vue";
+import PrayerPage from "./pages/Prayer.vue";
 import HomePage from "./pages/home.vue";
 import AboutPage from "./pages/about.vue";
-import MaximsPage from "./pages/10Maxims.vue";
 import LoginPage from "./pages/login.vue";
 
 /*
@@ -42,6 +46,22 @@ export default {
           {
             path: "/maxims/",
             component: MaximsPage
+          },
+          {
+            path: "/relaxation/",
+            component: RelaxationPage
+          },
+          {
+            path: "/meditation/",
+            component: MeditationPage
+          },
+          {
+            path: "/cleaning/",
+            component: CleaningPage
+          },
+          {
+            path: "/prayer/",
+            component: PrayerPage
           }
           // ...
         ]

@@ -1,6 +1,6 @@
 <template>
   <f7-page name="login">
-    <f7-navbar title="10 Maxims" back-link="Back"> </f7-navbar>
+    <f7-navbar title="Meditation" back-link="Back"> </f7-navbar>
     <!-- <f7-navbar title="Login"></f7-navbar> -->
     <!-- Page content -->
     <f7-card>
