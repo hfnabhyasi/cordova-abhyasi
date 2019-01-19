@@ -4,9 +4,10 @@
     <f7-card>
       <f7-list>
         <f7-list-item
-          v-for="(maxim, idxProp, idx) in maximsData.maxims"
+          v-for="(maxim, idxProp) in maximsData.maxims"
           :title="maxim.properties.title"
           :link="`/maxims/${idxProp}`"
+          :key="idxProp"
           no-chevron
         >
         </f7-list-item>
