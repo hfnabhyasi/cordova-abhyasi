@@ -6,7 +6,7 @@
       <f7-block>
         <h1 class="capitalize">{{ practice }}</h1>
         <ul>
-          <li v-for="{ step, idx } in Practice[practice]" :key="idx">
+          <li v-for="(step, idx) in Practice[practice]" :key="idx">
             <template v-if="step.prayer">
               <div>
                 <p

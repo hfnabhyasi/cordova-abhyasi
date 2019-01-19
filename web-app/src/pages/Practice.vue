@@ -4,9 +4,10 @@
     <f7-card>
       <f7-list>
         <f7-list-item
-          v-for="item in PracticePageListItems"
+          v-for="(item, idx) in PracticePageListItems"
           :title="item.title"
           :link="item.link"
+          :key="idx"
           no-chevron
         ></f7-list-item>
       </f7-list>
