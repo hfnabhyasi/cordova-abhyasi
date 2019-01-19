@@ -1,8 +1,6 @@
 module.exports = {
   baseUrl: '',
-  configureWebpack: {
-    // watchOptions: {
-    //   // poll : true
-    // }
+  devServer: {
+    host: 'localhost'
   }
 }
